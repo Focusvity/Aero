@@ -30,7 +30,7 @@ import org.json.simple.JSONObject;
 /**
  * bStats collects some data for plugin authors.
  *
- * Check out https://bStats.org/ to learn more about bStats!
+ * <p>Check out https://bStats.org/ to learn more about bStats!
  */
 @SuppressWarnings("unchecked") // Aero - third-party
 public class InternalMetrics {

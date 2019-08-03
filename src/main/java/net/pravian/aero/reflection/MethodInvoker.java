@@ -19,8 +19,8 @@ import java.lang.reflect.Method;
 
 public class MethodInvoker implements ReflectionAccess {
 
-  private Method method = null;
-  private boolean wasAccessible = false;
+  private Method method;
+  private boolean wasAccessible;
 
   public MethodInvoker(Method method) {
     this(method, method.isAccessible());

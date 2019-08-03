@@ -20,15 +20,15 @@ import net.pravian.aero.command.AeroCommandBase;
 
 public interface AeroPermissionHandler {
 
-  public Set<String> getPermissions(Class<? extends AeroCommandBase<?>> command);
+  Set<String> getPermissions(Class<? extends AeroCommandBase<?>> command);
 
-  public boolean containsPermissions(Class<? extends AeroCommandBase<?>> command);
+  boolean containsPermissions(Class<? extends AeroCommandBase<?>> command);
 
-  public boolean containsPermission(Class<? extends AeroCommandBase<?>> command, String permission);
+  boolean containsPermission(Class<? extends AeroCommandBase<?>> command, String permission);
 
-  public void addPermission(Class<? extends AeroCommandBase<?>> command, String permission);
+  void addPermission(Class<? extends AeroCommandBase<?>> command, String permission);
 
-  public void clearPermissions();
+  void clearPermissions();
 
-  public void clearPermissions(Class<? extends AeroCommandBase<?>> command);
+  void clearPermissions(Class<? extends AeroCommandBase<?>> command);
 }

@@ -18,5 +18,5 @@ package net.pravian.aero.command.permission;
 public interface AeroPermissionContainer {
 
   // TODO docs docs docs!
-  public String getPermission();
+  String getPermission();
 }

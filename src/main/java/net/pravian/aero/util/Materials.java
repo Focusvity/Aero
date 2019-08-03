@@ -7,11 +7,8 @@ import org.bukkit.Material;
 @SuppressWarnings("deprecation")
 public class Materials {
 
-  /**
-   * <p>
-   * Author: Essentials Team
-   */
-  protected static final HashSet<String> TRANSPARENT_MATERIALS = new HashSet<String>();
+  /** Author: Essentials Team */
+  protected static final HashSet<String> TRANSPARENT_MATERIALS = new HashSet<>();
 
   static {
     final HashSet<String> MATERIALS = new HashSet<>();
@@ -28,7 +25,7 @@ public class Materials {
     MATERIALS.add(Material.DEAD_BUSH.toString());
     MATERIALS.add(Material.CHORUS_FLOWER.toString());
     MATERIALS.add(Material.SUNFLOWER.toString());
-    MATERIALS.add(Material.ROSE_RED.toString());
+    MATERIALS.add(Material.ROSE_BUSH.toString());
     MATERIALS.add(Material.BROWN_MUSHROOM.toString());
     MATERIALS.add(Material.RED_MUSHROOM.toString());
     MATERIALS.add(Material.TORCH.toString());
@@ -45,7 +42,16 @@ public class Materials {
     MATERIALS.add(Material.SPRUCE_DOOR.toString());
     MATERIALS.add(Material.IRON_DOOR.toString());
     MATERIALS.add(Material.LADDER.toString());
-    MATERIALS.add(Material.WALL_SIGN.toString());
+    MATERIALS.add(Material.ACACIA_SIGN.toString());
+    MATERIALS.add(Material.BIRCH_SIGN.toString());
+    MATERIALS.add(Material.DARK_OAK_SIGN.toString());
+    MATERIALS.add(Material.JUNGLE_SIGN.toString());
+    MATERIALS.add(Material.SPRUCE_SIGN.toString());
+    MATERIALS.add(Material.ACACIA_WALL_SIGN.toString());
+    MATERIALS.add(Material.BIRCH_WALL_SIGN.toString());
+    MATERIALS.add(Material.DARK_OAK_WALL_SIGN.toString());
+    MATERIALS.add(Material.JUNGLE_WALL_SIGN.toString());
+    MATERIALS.add(Material.SPRUCE_WALL_SIGN.toString());
     MATERIALS.add(Material.LEVER.toString());
     MATERIALS.add(Material.ACACIA_PRESSURE_PLATE.toString());
     MATERIALS.add(Material.BIRCH_PRESSURE_PLATE.toString());
@@ -103,7 +109,7 @@ public class Materials {
    * @return the materials
    */
   public static Set<Material> getTransparentMaterials() {
-    final Set<Material> materials = new HashSet<Material>();
+    final Set<Material> materials = new HashSet<>();
 
     for (String material : TRANSPARENT_MATERIALS) {
       materials.add(Material.getMaterial(material));

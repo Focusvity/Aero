@@ -19,5 +19,5 @@ import org.bukkit.configuration.ConfigurationSection;
 
 public interface ConfigSavable {
 
-  public void saveTo(ConfigurationSection section);
+  void saveTo(ConfigurationSection section);
 }

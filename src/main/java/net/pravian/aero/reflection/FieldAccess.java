@@ -21,8 +21,8 @@ import java.lang.reflect.Modifier;
 @SuppressWarnings("unchecked")
 public class FieldAccess implements ReflectionAccess {
 
-  private Field field = null;
-  private boolean wasAccessible = false;
+  private Field field;
+  private boolean wasAccessible;
 
   public FieldAccess(Field method) {
     this(method, method.isAccessible());

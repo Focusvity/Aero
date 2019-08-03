@@ -19,8 +19,8 @@ import java.lang.reflect.Constructor;
 
 public class ConstructorInvoker implements ReflectionAccess {
 
-  private Constructor constructor = null;
-  private boolean wasAccessible = false;
+  private Constructor constructor;
+  private boolean wasAccessible;
 
   public ConstructorInvoker(Constructor method) {
     this(method, method.isAccessible());

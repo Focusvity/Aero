@@ -9,21 +9,20 @@ import org.bukkit.command.CommandSender;
 
 public interface AeroCommandBase<T extends AeroPlugin<T>> {
 
-  public void register(SimpleCommandHandler<T> handler) throws CommandRegistrationException;
+  void register(SimpleCommandHandler<T> handler) throws CommandRegistrationException;
 
-  public void unregister();
+  void unregister();
 
-  public boolean isRegistered();
+  boolean isRegistered();
 
-  public void onInit();
+  void onInit();
 
-  public AeroCommandHandler<T> getHandler();
+  AeroCommandHandler<T> getHandler();
 
-  public Class<? extends AeroCommandBase<T>> getCommandClass();
+  Class<? extends AeroCommandBase<T>> getCommandClass();
 
-  public boolean runCommand(
+  boolean runCommand(
       final CommandSender sender, final Command command, final String label, final String[] args);
 
-  public List<String> tabComplete(
-      CommandSender sender, Command command, String label, String[] args);
+  List<String> tabComplete(CommandSender sender, Command command, String label, String[] args);
 }

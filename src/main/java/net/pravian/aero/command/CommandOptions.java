@@ -29,17 +29,17 @@ import net.pravian.aero.command.permission.AeroPermissionHandler;
 @Target({ElementType.TYPE, ElementType.METHOD})
 public @interface CommandOptions {
 
-  public String usage() default "";
+  String usage() default "";
 
-  public SourceType source() default SourceType.ANY;
+  SourceType source() default SourceType.ANY;
 
-  public SourceType[] sources() default {};
+  SourceType[] sources() default {};
 
-  public String permission() default "";
+  String permission() default "";
 
-  public String description() default "";
+  String description() default "";
 
-  public String aliases() default "";
+  String aliases() default "";
 
   /**
    * The sub permission which is required to use this command.
@@ -49,5 +49,5 @@ public @interface CommandOptions {
    * @return The subPermission which is required for this command.
    * @see AeroCommandHandler#setPermissionHandler(AeroPermissionHandler)
    */
-  public String subPermission() default "";
+  String subPermission() default "";
 }

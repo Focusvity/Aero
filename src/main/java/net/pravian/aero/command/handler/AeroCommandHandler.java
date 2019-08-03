@@ -25,61 +25,61 @@ import org.bukkit.command.PluginCommand;
 
 public interface AeroCommandHandler<T extends AeroPlugin<T>> {
 
-  public T getPlugin();
+  T getPlugin();
 
-  public void clearCommands();
+  void clearCommands();
 
-  public int loadFrom(Package pack);
+  int loadFrom(Package pack);
 
-  public void addAll(Iterable<? extends AeroCommandBase<T>> commands);
+  void addAll(Iterable<? extends AeroCommandBase<T>> commands);
 
-  public void add(AeroCommandBase<T> command);
+  void add(AeroCommandBase<T> command);
 
-  public void add(AeroCommandBase<T> command, String name);
+  void add(AeroCommandBase<T> command, String name);
 
-  public void add(AeroCommandExecutor<? extends AeroCommandBase<T>> executor);
+  void add(AeroCommandExecutor<? extends AeroCommandBase<T>> executor);
 
-  public boolean registerAll();
+  boolean registerAll();
 
-  public boolean registerAll(String fallbackPrefix, boolean force);
+  boolean registerAll(String fallbackPrefix, boolean force);
 
-  public Map<String, AeroCommandExecutor<?>> getExecutorMap();
+  Map<String, AeroCommandExecutor<?>> getExecutorMap();
 
-  public Collection<AeroCommandExecutor<?>> getExecutors();
+  Collection<AeroCommandExecutor<?>> getExecutors();
 
-  public Map<String, PluginCommand> getRegisteredCommandsMap();
+  Map<String, PluginCommand> getRegisteredCommandsMap();
 
-  public Collection<PluginCommand> getRegisteredCommands();
+  Collection<PluginCommand> getRegisteredCommands();
 
-  public AeroPermissionHandler getPermissionHandler();
+  AeroPermissionHandler getPermissionHandler();
 
-  public void setPermissionHandler(AeroPermissionHandler permissionHandler);
+  void setPermissionHandler(AeroPermissionHandler permissionHandler);
 
-  public String getSuperPermission();
+  String getSuperPermission();
 
-  public void setSuperPermission(String permission);
+  void setSuperPermission(String permission);
 
-  public String getOnlyPlayerMessage();
+  String getOnlyPlayerMessage();
 
-  public void setOnlyPlayerMessage(String message);
+  void setOnlyPlayerMessage(String message);
 
-  public String getOnlyConsoleMessage();
+  String getOnlyConsoleMessage();
 
-  public void setOnlyConsoleMessage(String message);
+  void setOnlyConsoleMessage(String message);
 
-  public String getInvalidArgumentLengthMessage();
+  String getInvalidArgumentLengthMessage();
 
-  public void setInvalidArgumentLengthMessage(String message);
+  void setInvalidArgumentLengthMessage(String message);
 
-  public String getInvalidArgumentMessage();
+  String getInvalidArgumentMessage();
 
-  public void setInvalidArgumentMessage(String message);
+  void setInvalidArgumentMessage(String message);
 
-  public String getPermissionMessage();
+  String getPermissionMessage();
 
-  public void setPermissionMessage(String message);
+  void setPermissionMessage(String message);
 
-  public String getCommandClassPrefix();
+  String getCommandClassPrefix();
 
-  public void setCommandClassPrefix(String prefix);
+  void setCommandClassPrefix(String prefix);
 }

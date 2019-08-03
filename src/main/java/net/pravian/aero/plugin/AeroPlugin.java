@@ -167,7 +167,7 @@ public abstract class AeroPlugin<T extends AeroPlugin<T>> extends JavaPlugin
   /**
    * Registers an event listener.
    *
-   * TODO: Better docs for this, multiple usage, etc.
+   * <p>TODO: Better docs for this, multiple usage, etc.
    *
    * @param listener class to register
    * @return True if the listener registered correctly.

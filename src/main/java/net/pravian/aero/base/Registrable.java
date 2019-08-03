@@ -17,9 +17,9 @@ package net.pravian.aero.base;
 
 public interface Registrable {
 
-  public void register();
+  void register();
 
-  public void unregister();
+  void unregister();
 
-  public boolean isRegistered();
+  boolean isRegistered();
 }

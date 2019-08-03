@@ -23,15 +23,15 @@ import org.bukkit.command.TabExecutor;
 
 public interface AeroCommandExecutor<C extends AeroCommandBase<?>> extends TabExecutor {
 
-  public String getName();
+  String getName();
 
-  public C getCommandBase();
+  C getCommandBase();
 
-  public AeroCommandHandler<?> getHandler();
+  AeroCommandHandler<?> getHandler();
 
-  public boolean hasPermission(CommandSender sender);
+  boolean hasPermission(CommandSender sender);
 
-  public boolean hasPermission(CommandSender sender, boolean sendMessage);
+  boolean hasPermission(CommandSender sender, boolean sendMessage);
 
-  public void setupCommand(PluginCommand command);
+  void setupCommand(PluginCommand command);
 }

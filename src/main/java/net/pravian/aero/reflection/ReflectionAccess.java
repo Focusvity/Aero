@@ -17,11 +17,11 @@ package net.pravian.aero.reflection;
 
 public interface ReflectionAccess {
 
-  public boolean isAccessible();
+  boolean isAccessible();
 
-  public ReflectionAccess setAccessible(boolean flag);
+  ReflectionAccess setAccessible(boolean flag);
 
-  public ReflectionAccess setAccessible();
+  ReflectionAccess setAccessible();
 
-  public boolean wasAccessible();
+  boolean wasAccessible();
 }

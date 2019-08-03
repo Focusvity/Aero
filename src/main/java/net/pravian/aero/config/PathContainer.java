@@ -7,5 +7,5 @@ public interface PathContainer {
    *
    * @return The path.
    */
-  public String getPath();
+  String getPath();
 }
